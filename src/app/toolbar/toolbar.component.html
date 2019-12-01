@@ -1,0 +1,9 @@
+<mat-toolbar color='primary' class='mcd-elevation--z5'>
+  <mat-toolbar-row>
+    <div>
+      <span><b>Todo app</b></span>
+      <a routerLink="/list" routerLinkActive="myActive" mat-button>show all</a>
+      <a [routerLink]="['/new-item']" routerLinkActive="myActive" mat-button>add new</a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

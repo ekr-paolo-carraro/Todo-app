@@ -1,0 +1,5 @@
+<mat-spinner *ngIf="busy"></mat-spinner>
+
+<mat-list role="list" *ngIf="!busy">
+  <mat-list-item role="listitem" *ngFor="let todo of todoList">{{todo.title}}</mat-list-item>
+</mat-list>

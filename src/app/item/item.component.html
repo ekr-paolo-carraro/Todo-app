@@ -1,0 +1,13 @@
+<form class="form-full" #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <mat-form-field class="form-full-item">
+    <input matInput placeholder="todo title" name="title" [(ngModel)]="title" required>
+  </mat-form-field>
+  <div class="form-full-item">
+    <mat-checkbox [(ngModel)]="done" [ngModelOptions]="{standalone: true}">Done</mat-checkbox>
+  </div>
+
+  <div class="form-full-item">
+    <button mat-raised-button type="reset">Reset</button>
+    <button mat-raised-button type="submit" [disabled]="!f.valid">Submit</button>
+  </div>
+</form>
